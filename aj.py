@@ -16,7 +16,7 @@ data = {
 df = pd.DataFrame(data)
 st.line_chart(df)
 
-data = {'Categoría A': 30, 'Categoría B': 20, 'Categoría C': 45}
+data2 = {'Categoría A': 30, 'Categoría B': 20, 'Categoría C': 45}
 fig, ax = plt.subplots()
-ax.bar(data.keys(), data.values())
+ax.bar(data2.keys(), data2.values())
 st.pyplot(fig)
