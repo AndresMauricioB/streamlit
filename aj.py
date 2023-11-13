@@ -5,6 +5,11 @@ st.write("""
 # My first app
 Hello *world!*
 """)
- 
-df = pd.read_csv("my_data.csv")
+data = {
+    'Nombre': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Edad': [25, 30, 35, 28],
+    'Ciudad': ['Nueva York', 'Los Ángeles', 'Chicago', 'Houston']
+}
+
+df = pd.DataFrame(data)
 st.line_chart(df)
