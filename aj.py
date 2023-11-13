@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+
+import matplotlib.pyplot as plt
  
 st.write("""
 # My first app
@@ -13,3 +15,8 @@ data = {
 
 df = pd.DataFrame(data)
 st.line_chart(df)
+
+data = {'Categoría A': 30, 'Categoría B': 20, 'Categoría C': 45}
+fig, ax = plt.subplots()
+ax.bar(data.keys(), data.values())
+st.pyplot(fig)
