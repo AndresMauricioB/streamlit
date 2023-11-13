@@ -28,6 +28,8 @@ st.bar_chart(df.set_index('Nombre')['Edad'])
 # valores de las columnas 'Ciudad' en el eje x y 'Edad' en el eje y.
 st.scatter_chart(df, x='Ciudad', y='Edad')
 
-# Este comando crea un gráfico de torta o pastel
+
+number = st.slider("Pick a number", 0, 100)
+
 
 
