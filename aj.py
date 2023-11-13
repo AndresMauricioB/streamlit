@@ -29,7 +29,7 @@ st.bar_chart(df.set_index('Nombre')['Edad'])
 st.scatter_chart(df, x='Ciudad', y='Edad')
 
 # Este comando crea un gráfico de torta o pastel
-st.pie_chart(df)
+st.pie_chart(df$Edad)
  
 
 
