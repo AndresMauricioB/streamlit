@@ -15,6 +15,10 @@ df = pd.DataFrame(data)
 st.line_chart(df)
 
 st.bar_chart(df)
+
+st.area_chart(df)
+
+st.pie_chart(df)
  
 
 
