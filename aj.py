@@ -29,21 +29,5 @@ st.bar_chart(df.set_index('Nombre')['Edad'])
 st.scatter_chart(df, x='Ciudad', y='Edad')
 
 # Este comando crea un gráfico de torta o pastel
-# Definir grupos de edad
-bins = [0, 25, 30, 35, 100]  # Puedes ajustar estos límites según tus necesidades
-
-# Etiquetas para los grupos de edad
-labels = ['Menos de 25', '25-30', '30-35', 'Más de 35']
-
-# Agregar una nueva columna 'Grupo de Edad' al DataFrame
-df['Grupo de Edad'] = pd.cut(df['Edad'], bins=bins, labels=labels, right=False)
-
-# Calcular la distribución de los grupos de edad
-edad_distribucion = df['Grupo de Edad'].value_counts()
-
-# Crear el gráfico de torta
-st.write("Distribución de Edades:")
-st.pie_chart(edad_distribucion)
- 
 
 
