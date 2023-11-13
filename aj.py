@@ -17,8 +17,14 @@ st.line_chart(df)
 st.bar_chart(df)
 
 st.area_chart(df)
+# Gráfico de barras de edades
+st.bar_chart(df.set_index('Nombre')['Edad'])
 
-st.pie_chart(df)
+# Gráfico de dispersión de edades por ciudad
+st.scatter_chart(df, x='Ciudad', y='Edad')
+
+# Gráfico de torta de edades
+st.pie_chart(df['Edad'])
  
 
 
