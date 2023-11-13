@@ -26,7 +26,7 @@ st.bar_chart(df.set_index('Nombre')['Edad'])
 
 # Este comando genera un gráfico de dispersión que muestra puntos dispersos en función de los 
 # valores de las columnas 'Ciudad' en el eje x y 'Edad' en el eje y.
-st.scatter_chart(df, x='Ciudad', y='Edad')
+#st.scatter_chart(df, x='Ciudad', y='Edad')
 
 
 number = st.slider("Pick a number", 0, 100)
