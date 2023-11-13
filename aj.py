@@ -16,7 +16,7 @@ st.line_chart(df)
 
 st.bar_chart(df)
 
-st.area_chart(df)
+
 # Gráfico de barras de edades
 st.bar_chart(df.set_index('Nombre')['Edad'])
 
