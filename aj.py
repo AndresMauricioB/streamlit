@@ -3,7 +3,7 @@ import pandas as pd
 
 st.write("""
 # APP
-Hola Mundo*
+Hola Mundo clase martes*
 """)
 # Datos de ejemplos
 data = {
